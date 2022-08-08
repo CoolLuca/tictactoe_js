@@ -1,0 +1,99 @@
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#game-window {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#game-board {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.board-row {
+    display: flex;
+    font-family: sans-serif;
+}
+
+.box {
+    border: 2px solid rgb(34, 32, 32);
+    border-radius: 3px;
+    margin: 2px;
+    font-weight: 700;
+    font-family: sans-serif;
+    min-height: 6rem;
+    min-width: 6rem;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.X {
+    color: red;
+}
+
+.O {
+    color: blue;
+}
+
+#splash {
+    position: fixed;
+    width: 10rem;
+    margin: auto;
+    background: white;
+    border: 0.2rem solid rgb(40, 40, 40);
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p {
+    font-family: sans-serif;
+    color: black;
+}
+
+#startButton {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin: 20px;
+    cursor: pointer;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-top: 5px;
+}
